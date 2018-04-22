@@ -1,0 +1,21 @@
+This is the design for this website:
+
+on each page or action request, the action is handled by the Request class.
+
+This way, instead of putting logic on every single page to verify user or admin
+is authorized, the logic is handled in one place. 
+
+To that end, I have created template pages that will link that logic to each page.
+For all customer pages, i created a customer.php template, which will only need the 
+content added to it between the div tags
+
+For all admin  pages, i created a admin.php template, which will only need the 
+content added to it between the div tags
+
+for all generic open accessed pages, i created a page.php template, which will only need the 
+content added to it between the div tags
+
+this way all the logic will be embedded in the templates
+
+I have also created a header and footer template files in the templates folder. This way,
+the header would only need to be updated in one spot for the menu, instead of on many pages
